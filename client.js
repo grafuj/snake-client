@@ -14,15 +14,6 @@ const connect = function() {
   conn.on("connect", () => {
     // code that does something when the connection is first established
     conn.write('Name: Jim');
-    // conn.write("Move: up");
-    // setInterval(() => {
-    //   conn.write("Move: left");
-    //   conn.write("Move: up");
-    // }, 500);
-    // conn.write("Move: left");
-    // conn.write("Move: up");
-    // conn.write("Move: left");
-    // conn.write("Move: up");
 
   });
   conn.on("data", (data) => {
@@ -30,20 +21,6 @@ const connect = function() {
     console.log('server data:', data);
   });
 
-
-
-
-  // if (data.includes('Name:')) {
-  //   console.log('this client will change their name');
-
-  // } else {
-  //   for (const connection of connections){
-  //     if (connection !== conn) {
-  //       connection.write(data);
-  //     }
-  //   }
-  // }
   return conn;
 };
-
-module.exports = connect;
+module.exports = {connect};
