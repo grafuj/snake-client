@@ -37,6 +37,15 @@ const handleUserInput = function(data) {
     console.log("s = Move: down");
     connection.write("Move: down");
   }
+  if (data.includes("n")) {
+    console.log("n = Message");
+    connection.write("Say: Noob alert");
+  }
+  if (data.includes("m")) {
+    console.log("m = Message");
+    connection.write("Say: movement bad");
+  }
+
 };
 
 module.exports = { setupInput };

@@ -13,7 +13,7 @@ const connect = function() {
 
   conn.on("connect", () => {
     // code that does something when the connection is first established
-    conn.write('Name: Jim');
+    conn.write('Name: boi');
 
   });
   conn.on("data", (data) => {
