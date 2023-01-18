@@ -15,14 +15,14 @@ const connect = function() {
     // code that does something when the connection is first established
     conn.write('Name: Jim');
     // conn.write("Move: up");
-    setInterval(() => {
-      conn.write("Move: left");
-      conn.write("Move: up");
-    }, 500);
-    conn.write("Move: left");
-    conn.write("Move: up");
-    conn.write("Move: left");
-    conn.write("Move: up");
+    // setInterval(() => {
+    //   conn.write("Move: left");
+    //   conn.write("Move: up");
+    // }, 500);
+    // conn.write("Move: left");
+    // conn.write("Move: up");
+    // conn.write("Move: left");
+    // conn.write("Move: up");
 
   });
   conn.on("data", (data) => {
